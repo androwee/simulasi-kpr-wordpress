@@ -1,0 +1,112 @@
+# Copyright (C) 2025 Nama Anda
+# This file is distributed under the same license as the Simulasi KPR Pro package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simulasi KPR Pro 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/simulasi-kpr-pro\n"
+"POT-Creation-Date: 2025-07-25 00:00+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Full Name <email@address>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: includes/shortcode-kalkulator.php:30
+msgid "🏠 Simulasi Kredit Pemilikan Rumah (KPR)"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:32
+msgid "Harga Properti (Rp)"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:36
+msgid "Uang Muka (%)"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:40
+msgid "Jumlah Pinjaman (Pokok Hutang)"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:44
+msgid "Suku Bunga per Tahun (%)"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:48
+msgid "Jangka Waktu (Tahun)"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:52
+msgid "Hitung Simulasi"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:56
+msgid "Hasil Perhitungan"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:59
+msgid "Angsuran per Bulan"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:63
+msgid "Total Pinjaman"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:67
+msgid "Total Bunga"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:71
+msgid "Total Pembayaran"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:75
+msgid "📄 Unduh Hasil (PDF)"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:77
+msgid "Detail Jadwal Angsuran"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:81
+msgid "Bulan ke-"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:82
+msgid "Angsuran Pokok"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:83
+msgid "Angsuran Bunga"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:84
+msgid "Total Angsuran"
+msgstr ""
+
+#: includes/shortcode-kalkulator.php:85
+msgid "Sisa Pokok"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Simulasi KPR Pro"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://example.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin untuk simulasi perhitungan KPR dengan fitur detail angsuran dan unduh hasil dalam format PDF."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "andro"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://example.com/"
+msgstr ""
