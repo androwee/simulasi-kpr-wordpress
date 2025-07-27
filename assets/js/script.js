@@ -1,19 +1,43 @@
 jQuery(document).ready(function ($) {
+    // Fungsi untuk menyinkronkan slider dan input number
+    function syncSliderAndInput(sliderId, inputId) {
+        const slider = $(sliderId);
+        const input = $(inputId);
+
+        slider.on('input', function() {
+            input.val($(this).val());
+            calculateLoanAmount(); // Panggil kalkulasi ulang saat slider digerakkan
+        });
+
+        input.on('input', function() {
+            slider.val($(this).val());
+            calculateLoanAmount(); // Panggil kalkulasi ulang saat input diubah
+        });
+    }
+
+    syncSliderAndInput('#skp-uang-muka-slider', '#skp-uang-muka');
+    syncSliderAndInput('#skp-suku-bunga-slider', '#skp-suku-bunga');
+    syncSliderAndInput('#skp-jangka-waktu-slider', '#skp-jangka-waktu');
+
     // Format input uang saat diketik
     $('.skp-money').on('keyup', function() {
         let value = $(this).val().replace(/[^0-9]/g, '');
         if (value) {
             $(this).val(new Intl.NumberFormat('id-ID').format(value));
         }
+        calculateLoanAmount(); // Panggil kalkulasi ulang saat harga properti diubah
     });
 
-    // Kalkulasi jumlah pinjaman secara real-time
-    $('#skp-harga-properti, #skp-uang-muka').on('keyup change', function() {
+    // Fungsi untuk menghitung jumlah pinjaman
+    function calculateLoanAmount() {
         const harga = parseFloat($('#skp-harga-properti').val().replace(/[^0-9]/g, '')) || 0;
         const dp = parseFloat($('#skp-uang-muka').val()) || 0;
         const jumlahPinjaman = harga - (harga * (dp / 100));
         $('#skp-jumlah-pinjaman-display').text(formatRupiah(jumlahPinjaman));
-    });
+    }
+
+    // Panggil fungsi kalkulasi saat halaman dimuat
+    calculateLoanAmount();
 
     // Fungsi format Rupiah
     function formatRupiah(angka) {
